@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Age calculator app</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <div class="container">
+      <main class="main">
+        <div class="form-info">
+          <form class="form">
+            <div class="form__group">
+              <label class="form__label" for="day">Day</label>
+              <input class="form__input" id="day" type="text" placeholder="DD" />
+              <span id="day-error">Must be a valid day</span>
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="month">Month</label>
+              <input
+                class="form__input"
+                id="month"
+                type="text"
+                placeholder="MM"
+              />
+              <span id="month-error">Must be a valid month</span>
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="year">Years</label>
+              <input
+                class="form__input"
+                id="year"
+                type="text"
+                placeholder="YYYY"
+              />
+              <span id="year-error">Must be a valid past</span>
+            </div>
+          </form>
+          <div class="button-and-separator">
+            <div class="separator"></div> <!-- Utilisez une div pour le séparateur -->
+            <button type="submit" class="form__submit-btn">
+              <img class="img"src="assets/images/icon-arrow.svg" alt="Submit">
+            </button>
+        </div>
+        <div class="display">
+          <div class="display__item">
+            <p class="display__number-years">--</p>
+            <p class="display__text-years">years</p>
+          </div>
+          <div class="display__item">
+            <p class="display__number-months">--</p>
+            <p class="display__text-months">months</p>
+          </div>
+          <div class="display__item">
+            <p class="display__number-days">--</p>
+            <p class="display__text-days">days</p>
+          </div>
+        </div>
+      
+      </main>
+       <footer class="footer">
+      <span class="copyright">
+        by <a href="https://github.com/michelcwn"target="_blank">michelcwn</a>
+        from <a href="https://www.frontendmentor.io/home" target="_blank">Frontend Mentor</a>
+      </span>
+    </footer>
+    </div>
+   
+   
+  </body>
+</html>
