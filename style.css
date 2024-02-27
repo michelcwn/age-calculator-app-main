@@ -190,14 +190,23 @@ p {
 }
 
 /* responsive */
+@media (max-width: 1366px) {
+  .main {
+    padding: 4rem;
+  }
+  .form__input {
+    width: 18rem;
+  }
+  p {
+    font-size: 9rem;
+  }
+}
 @media (max-width: 850px) {
   .main {
     padding: 2.5rem;
   }
 
-  p {
-    font-size: 9rem;
-  }
+ 
 }
 
 @media (max-width: 850px) {
